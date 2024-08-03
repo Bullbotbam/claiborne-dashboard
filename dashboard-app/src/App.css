@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.component {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.calendar {
+  grid-column: span 2; /* Adjust this value depending on how many columns you want it to span */
+}
+/* 
+@media (min-width: 600px) {
+  .calendar {
+    grid-column: span 3; 
+  }
+}
+
+@media (min-width: 900px) {
+  .calendar {
+    grid-column: span 4; 
+  }
+} 
+*/
