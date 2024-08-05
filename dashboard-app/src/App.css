@@ -23,7 +23,7 @@ body {
 .calendar {
   grid-column: span 2; /* Adjust this value depending on how many columns you want it to span */
 }
-/* 
+
 @media (min-width: 600px) {
   .calendar {
     grid-column: span 3; 
@@ -35,4 +35,4 @@ body {
     grid-column: span 4; 
   }
 } 
-*/
+
