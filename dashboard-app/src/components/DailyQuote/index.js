@@ -5,7 +5,7 @@ const DailyQuote = () => {
 
   useEffect(() => {
     // Fetch a daily quote from an API or use a static quote
-    setQuote('Your daily quote goes here.');
+    setQuote(`Everythig is Relative!    -    D. Bull`);
   }, []);
 
   return (
