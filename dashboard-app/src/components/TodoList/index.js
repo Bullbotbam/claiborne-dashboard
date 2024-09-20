@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { IconButton, TextField, Button, List, ListItem, ListItemText, ListItemSecondaryAction } from '@material-ui/core';
-import { Delete, Edit } from '@material-ui/icons';
+import { IconButton, TextField, Button, List, ListItem, ListItemText, ListItemSecondaryAction } from '@mui/material';
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
 
 const TodoList = () => {
   const [tasks, setTasks] = useState([]);
@@ -41,7 +42,12 @@ const TodoList = () => {
           variant="outlined"
           fullWidth
         />
-        <Button onClick={addTask} variant="contained" color="primary" style={{ marginLeft: '10px' }}>
+        <Button
+          onClick={addTask}
+          variant="contained"
+          color="primary"
+          style={{ marginLeft: '10px' }}
+        >
           {editingIndex !== null ? 'Update' : 'Add'}
         </Button>
       </div>
@@ -51,10 +57,10 @@ const TodoList = () => {
             <ListItemText primary={task} />
             <ListItemSecondaryAction>
               <IconButton edge="end" aria-label="edit" onClick={() => editTask(index)}>
-                <Edit />
+                <EditIcon />
               </IconButton>
               <IconButton edge="end" aria-label="delete" onClick={() => deleteTask(index)}>
-                <Delete />
+                <DeleteIcon />
               </IconButton>
             </ListItemSecondaryAction>
           </ListItem>
